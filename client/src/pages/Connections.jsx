@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Users, UserPlus, UserCheck, UserRoundPen, MessageSquare} from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
-
-
-
-
-
+import {useSelector, useDispatch} from 'react-redux'
+import { useAuth } from '@clerk/clerk-react';
+import { fetchConnections } from '../features/connections/connectionsSlice';
+import api from '../api/axios';
+import toast from 'react-hot-toast';
 
 const Connections = () => {
 

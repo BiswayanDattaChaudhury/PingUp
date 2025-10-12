@@ -93,4 +93,3 @@ const StoryViewer = ({viewStory, setViewStory}) => {
 }
 
 export default StoryViewer
-

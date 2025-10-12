@@ -18,4 +18,3 @@ const MenuItems = ({setSidebarOpen}) => {
 }
 
 export default MenuItems
-

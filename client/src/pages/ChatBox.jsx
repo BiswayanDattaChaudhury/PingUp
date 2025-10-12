@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { dummyMessagesData, dummyUserData } from '../assets/assets'
-
-
+import { ImageIcon, SendHorizonal } from 'lucide-react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
+import { useAuth } from '@clerk/clerk-react'
+import api from '../api/axios'
+import { addMessage, fetchMessages, resetMessages } from '../features/messages/messagesSlice'
+import toast from 'react-hot-toast'
 
 const ChatBox = () => {
 
@@ -121,4 +126,3 @@ const ChatBox = () => {
 }
 
 export default ChatBox
-

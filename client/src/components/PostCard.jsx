@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
-import { BadgeCheck, Heart, MessageCircle, Share2} from 'lucide-react'
+import { BadgeCheck, Heart, MessageCircle, Share2 } from 'lucide-react'
 import moment from 'moment'
 import { dummyUserData } from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux';
+import { useAuth } from '@clerk/clerk-react'
+import api from '../api/axios'
+import toast from 'react-hot-toast'
 
 const PostCard = ({post}) => {
 
@@ -81,4 +85,3 @@ const PostCard = ({post}) => {
 }
 
 export default PostCard
-

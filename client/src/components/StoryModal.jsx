@@ -1,7 +1,8 @@
+import { useAuth } from '@clerk/clerk-react'
 import { ArrowLeft, Sparkle, TextIcon, Upload } from 'lucide-react'
-import React ,{ useState } from 'react'
-
-
+import React, { useState } from 'react'
+import toast from 'react-hot-toast'
+import api from '../api/axios'
 
 const StoryModal = ({setShowModal, fetchStories}) => {
 
@@ -139,4 +140,3 @@ const StoryModal = ({setShowModal, fetchStories}) => {
 }
 
 export default StoryModal
-

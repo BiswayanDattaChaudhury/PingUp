@@ -1,8 +1,10 @@
-import React from 'react'
-import { dummyUserData } from '../assets/assets';
+import React, { useState } from 'react'
+import { dummyUserData } from '../assets/assets'
 import { Pencil } from 'lucide-react';
-
-
+import { useDispatch, useSelector } from 'react-redux';
+import { updateUser } from '../features/user/userSlice';
+import { useAuth } from '@clerk/clerk-react';
+import toast from 'react-hot-toast';
 
 const ProfileModal = ({setShowEdit}) => {
 
@@ -123,4 +125,3 @@ const ProfileModal = ({setShowEdit}) => {
 }
 
 export default ProfileModal
-

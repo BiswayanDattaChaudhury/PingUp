@@ -1,13 +1,16 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import { dummyPostsData, dummyUserData } from '../assets/assets'
 import { useEffect } from 'react'
 import Loading from '../components/Loading'
 import UserProfileInfo from '../components/UserProfileInfo'
 import PostCard from '../components/PostCard'
 import moment from 'moment'
-
-
+import ProfileModal from '../components/ProfileModal'
+import { useAuth } from '@clerk/clerk-react'
+import api from '../api/axios'
+import toast from 'react-hot-toast'
+import { useSelector } from 'react-redux'
 
 const Profile = () => {
 
@@ -101,4 +104,3 @@ const Profile = () => {
 }
 
 export default Profile
-
