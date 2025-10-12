@@ -1,5 +1,7 @@
 import { Inngest } from "inngest";
 import User from "../models/User.js";
+import Connection from "../models/Connection.js"
+import sendEmail from "../configs/nodeMailer.js";
 
 
 
